@@ -1,0 +1,249 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FD3F039-0AEC-4ECA-9FD1-38C75B9EBA16}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CHEXC</RootNamespace>
+    <AssemblyName>CHEXC</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassInfo\tb_Company.cs" />
+    <Compile Include="ClassInfo\tb_EmpInfo.cs" />
+    <Compile Include="ClassInfo\tb_JhGoodsInfo.cs" />
+    <Compile Include="ClassInfo\tb_KcGoods.cs" />
+    <Compile Include="ClassInfo\tb_SellGoods.cs" />
+    <Compile Include="ClassInfo\tb_ThGoodsInfo.cs" />
+    <Compile Include="frmDataBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataBack.Designer.cs">
+      <DependentUpon>frmDataBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDataReole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataReole.Designer.cs">
+      <DependentUpon>frmDataReole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompanyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompanyInfo.Designer.cs">
+      <DependentUpon>frmCompanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpInfo.Designer.cs">
+      <DependentUpon>frmEmpInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindGood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindGood.Designer.cs">
+      <DependentUpon>frmFindGood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGonYingShang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGonYingShang.Designer.cs">
+      <DependentUpon>frmGonYingShang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGoodID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodID.Designer.cs">
+      <DependentUpon>frmGoodID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJhGoodsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJhGoodsInfo.Designer.cs">
+      <DependentUpon>frmJhGoodsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKcGoodFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKcGoodFind.Designer.cs">
+      <DependentUpon>frmKcGoodFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKcGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKcGoods.Designer.cs">
+      <DependentUpon>frmKcGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellGoodInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellGoodInfo.Designer.cs">
+      <DependentUpon>frmSellGoodInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellGoods.Designer.cs">
+      <DependentUpon>frmSellGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThGoodsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThGoodsInfo.Designer.cs">
+      <DependentUpon>frmThGoodsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodMenhod\getSqlConnection.cs" />
+    <Compile Include="GoodMenhod\tb_CompanyMenthod.cs" />
+    <Compile Include="GoodMenhod\tb_EmpInfoMenthod.cs" />
+    <Compile Include="GoodMenhod\tb_JhGoodsInfoMenthod.cs" />
+    <Compile Include="GoodMenhod\tb_KcGoodsMenthod.cs" />
+    <Compile Include="GoodMenhod\tb_SellGoodsMenthod.cs" />
+    <Compile Include="GoodMenhod\tb_ThGoodsMenthod.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDataBack.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDataBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDataReole.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDataReole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompanyInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCompanyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEmpInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindGood.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFindGood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGonYingShang.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGonYingShang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGoodID.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGoodID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJhGoodsInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmJhGoodsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKcGoodFind.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKcGoodFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKcGoods.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKcGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellGoodInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSellGoodInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellGoods.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSellGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThGoodsInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmThGoodsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bg.JPG" />
+    <Content Include="Resources\保存.ico" />
+    <None Include="Resources\保存1.ico" />
+    <Content Include="Resources\修改.ico" />
+    <Content Include="Resources\删除.ico" />
+    <None Include="Resources\删除1.ico" />
+    <Content Include="Resources\取消.ico" />
+    <Content Include="Resources\添加.ico" />
+    <Content Include="Resources\退出.ico" />
+    <None Include="Resources\取消按钮.png" />
+    <None Include="Resources\确定按钮.png" />
+    <None Include="Resources\背景.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
